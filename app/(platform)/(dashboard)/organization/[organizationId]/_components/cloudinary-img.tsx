@@ -5,8 +5,8 @@ import { CldImage, CldImageProps } from "next-cloudinary";
 import { useState, useTransition } from "react";
 import { FullHeart } from "@/components/icons/full-heart";
 import { SearchResult } from "../gallery/page";
-import { setAsFavoriteAction } from "../gallery/actions";
-import { ImageMenu } from "./image-menu";
+import { setAsFavoriteAction } from "../gallery/_components/actions";
+
 
 export function CloudinaryImage(
   props: {
@@ -47,7 +47,6 @@ export function CloudinaryImage(
           className="absolute top-2 left-2 hover:text-red-500 cursor-pointer"
         />
       )}
-      <ImageMenu image={imageData} />
     </div>
   );
 }

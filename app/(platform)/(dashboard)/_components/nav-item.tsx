@@ -2,12 +2,7 @@
 
 import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
-import {
-  Activity,
-  CreditCard,
-  Layout,
-  Settings,
-} from "lucide-react";
+import { Layout } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { 
@@ -46,11 +41,6 @@ export const NavItem = ({
       label: "Stjórnborð",
       icon: <Layout className="h-4 w-4 mr-2" />,
       href: `/organization/${organization.id}`,
-    },
-    {
-      label: "Stillingar",
-      icon: <Settings className="h-4 w-4 mr-2" />,
-      href: `/organization/${organization.id}/settings`,
     },
   ];
 

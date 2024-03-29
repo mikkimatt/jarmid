@@ -14,6 +14,14 @@ export default authMiddleware({
         path = `/organization/${auth.orgId}`;
       }
 
+      if (auth.orgId) {
+        path = `/organization/${auth.orgId}/gallery`;
+      }
+
+      if (auth.orgId) {
+        path = `/organization/${auth.orgId}/favorites`;
+      }
+
       const orgSelection = new URL(path, req.url);
       return NextResponse.redirect(orgSelection);
     }

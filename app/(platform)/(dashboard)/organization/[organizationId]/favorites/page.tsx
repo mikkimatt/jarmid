@@ -1,3 +1,4 @@
+
 import cloudinary from "cloudinary";
 import { SearchResult } from "../gallery/page";
 import { ForceRefresh } from "../_components/force-refresh";
@@ -17,7 +18,7 @@ export default async function FavoritesPage() {
 
       <div className="flex flex-col gap-8">
         <div className="flex justify-between">
-          <h1 className="text-4xl font-bold">Favorite Images</h1>
+          <h1 className="text-4xl font-bold">Uppáhalds Jörm</h1>
         </div>
 
         <FavoritesList initialResources={results.resources} />
