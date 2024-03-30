@@ -1,36 +1,28 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Einstaklingsverkefni - Mikael Matthíasson - mim23@hi.
 
-First, run the development server:
+## Vefsíða útfærð 
+Ég bjó til vefsíðuna [Jarmið](https://jarmid.vercel.app/) með nextjs sem býður upp á innskráningu með Clerk og þar getur þú stofnað organization/rás og þar inni getur þú sett inn myndir/memes og valið uppáhalds meme. Í gegnum clerk getur þú líka boðið fólki í organization/rásina og það getur einnig séð hana. Því að mig langaði að bjóða upp á sér síðu fyrir memes á vinnustað 🥸
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Ég nýtti mér kunnáttu af netinu með hjálp frá Youtube og google sem ég lærði mikið af m.a. Nextjs app routing, user auth með clerk og gera middleware, file structuring, að skrifa nothæfa components, nota tailwindcss, react hooks, customize-a components sem eru núþegar til (shadcn-ui) og Image uploading með cloudinary. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Skilyrði
+Ég útfærði framenda með react typescript, tailwind css og [shadcn-ui](https://ui.shadcn.com/) 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Ég útfærði notenda umsjón með því að nýta mér clerk og shadcn. 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Ég tengdi cloudinary sem gagnagrunn fyrir verkefnið til að geyma myndir.
 
-## Learn More
+## Hvernig gekk
+Gekk allt mjög hægt fyrst. Leita sér af upplýsingum með löngum youtube tutorials og miklu googli.
 
-To learn more about Next.js, take a look at the following resources:
+Það gekk vel að skilja react components og shadcn 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Það gekk illa að skilja nexjs routing t.d. er ég ekki viss hvort að /organization/[organizationId]/gallery virki en þá ég fékk bara bad request í slóðina en fékk þetta samt til að birtast þegar ég smellti á "Jörm", mögulega eitthvað caching í gangi sem er ofar mínum skilning.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Það var gaman að skoða betur couldinary og allt það sem það býður uppá, og gaman að smíða framenda með endurnýtanlegum components frá shadcn og mínum eigin. 
 
-## Deploy on Vercel
+## Áframhald
+Það væri mjög gaman að halda áfram með þetta og þróa. Gera enn betra með meiri skilning og meiri tíma.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
